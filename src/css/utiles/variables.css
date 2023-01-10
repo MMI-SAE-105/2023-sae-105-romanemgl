@@ -1,0 +1,17 @@
+:root{
+    /* Color styles */
+--marron: rgba(99, 75, 75, 1);
+--beige: rgba(211, 187, 176, 1);
+--noir: rgba(0, 0, 0, 1);
+--blanc: rgba(255, 255, 255, 1);
+--gris: rgba(217, 217, 217, 1);
+--beige-clair: rgba(252, 246, 238, 1);
+
+/* Text-size styles */
+--titre-site: 40px;
+--heading-1: 24px;
+--heading-2: 18px;
+--button: 12px;
+--body-text: 15px;
+--commentaires: 24px;
+}
