@@ -7,6 +7,7 @@
     <title>Contact</title>
 
 <!-- Déclaration de la feuille de style -->
+    <link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
@@ -16,90 +17,74 @@
 </head>
 <body>
 <!--début header-->  
-    <header>
-        <img src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
-
+    <header class="header">
+        <div>
+            <img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
+        </div>
        
-        <img src="/public/img/icones/globe.svg" alt="logo globe">
+        <div class="header__droite"> 
+            <a href="/index.html">
+                <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
+            </a>
+            <button class="header__icone"><img  src="/public/img/icones/menu.svg" alt="logo menu"></button>
         
-    
-        <button>
-            <img src="/public/img/icones/menu.svg" alt="logo menu">
-        </button>
 
-<!--début menu-->
-<div>
-    <button></button> 
-    <nav>
-        <h3>Nos artistes</h3>
-        <ul>
-            <li><a href="/fr/juan.html">Juan de Juanes</a></li>
-            <li><a href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
-            <li><a href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
-            <li><a href="/fr/titien.html">Titien</a></li>
-        </ul>
-        <h3>à propos</h3>
-        <ul>
-            <li><a href="/fr/information.html">L'exposition</a></li>
-            <li><a href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
-            <li><a href="/fr/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+        <!--début menu-->
+            
+       <!-- <nav class="menu">
+                <h3 class="menu__titre">Nos artistes</h3>
+                <ul class="menu__texte-liste">
+                    <li><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
+                    <li><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
+                    <li><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
+                    <li><a class="menu__texte" href="/fr/titien.html">Titien</a></li>
+                </ul>
+                <h3 class="menu__titre">à propos</h3>
+                <ul class="menu__texte-liste">
+                    <li><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
+                    <li><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
+                    <li><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
+                </ul>
+            </nav>-->     
+        </div>
 <!--fin menu-->
     </header>
 <!--fin header-->   
 
 <!--début body-->
-            <main>
+            <main class="container">
                 <h1>Maniérisme : l'avant garde du baroque</h1>
                     
                 <p>Exposition temporaire</p>
                     
                 <h2>Formulaire de contact</h2>
                     
-                <div>
-                        <label for="Prénom">Prénom</label>
-                </div>
-
-                <div>  
+                <div class="contact">
+                    <label for="Prénom">Prénom</label>
                     <input type="text" name="Prénom" id="Prénom">
                 </div>
 
-                <div>
+                <div class="contact">
                     <label for="Nom">Nom</label>
-
-                </div>
-                
-                <div>
                     <input type="text" name="Nom" id="Nom">
                 </div>
                 
-                <div>
+                <div class="contact">
                     <label for="Mail">Mail</label>
-                </div>
-
-                <div>
                     <input type="text" name="Mail">
                 </div>
 
-                <div>
+                <div class="contact">
                     <label for="Téléphone">Téléphone</label>
-                </div>
-
-                <div>
                     <input type="text" name="Téléphone">
                 </div>
 
-                <div>
+                <div class="contact">
                     <label for="message">Votre message</label>
-                </div>
-
-                <div>
                     <textarea id="message" name="message" rows="5"></textarea>
                 </div>
 
-                <div>
+                <div class="contact__envoyer">
                 <button type="submit">Envoyer</button>
                 </div>
     

@@ -1,0 +1,23 @@
+.menu {
+    background-color: var(--marron);
+   
+}
+
+.menu__titre {
+    font-size: var(--heading-1);
+    font-family: var(--font-titre);
+    margin-left: 20px;
+    color: var(--blanc);
+    letter-spacing: 0.1rem;
+}
+
+.menu__texte-liste {
+    list-style: none;
+    text-underline-position: none;
+}
+
+.menu__texte {
+    text-decoration: none;
+    color: var(--beige);
+    font-family: var(--font-titre);
+}
