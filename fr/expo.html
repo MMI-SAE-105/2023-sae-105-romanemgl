@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -53,87 +53,106 @@
 <!--fin du header-->
 
 <!--début de main-->
-        <main>
-            <h1>Maniérisme : l'avant garde du baroque</h1>
+        <main class="container">
+            <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-            <p>Exposition temporaire</p>
+            <p class="exposition-temporaire">Exposition temporaire</p>
                     
-                <h2>Le mouvement de la fin de la renaissance</h2>
+                <h2 class="mouvement__titre-principal">Le mouvement de la fin de la renaissance</h2>
 
-                <p>Réaction à l’hégémonie de la perfection classique, le maniérisme est un courant esthétique de 
+                <p class="mouvement__texte">Réaction à l’hégémonie de la perfection classique, le maniérisme est un courant esthétique de 
                 la fin de la Renaissance qui envisage une nouvelle représentation du canon hérité de l’Antiquité. 
                 Ses principaux représentants, pour le contexte italien, sont Pontormo, Parmigianino, Bronzino, Arcimboldo… 
                 </p>
 
-                <h3>Les artistes présents dans notre expo</h3>
+                <h3 class="mouvement__titre">Les artistes présents dans notre expo</h3>
 
-                <div>
-                    <img src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Scylla et Glaucus oeuvre">
-                    <h2>Bartholomeus Spranger</h2>
-                    <a>En savoir plus</a>
+                <article class="carte">
+                  <div class="carte__div-img">
+                      <img class="carte__img" src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Bartholomeus">
+                      <h2 class="carte__texte">Bartholomeus Spranger</h2>
+                  </div>
+                  <div class="carte__caption">
+                      <a class="carte__en-savoir-plus">En savoir plus</a>
+                  </div>
+              </article>
+
+
+              <article class="carte">
+                <div class="carte__div-img">
+                    <img class="carte__img" src="/public/img/juan/ecce-homo.webp" alt="Juan de Juanes">
+                    <h2 class="carte__texte">Juan de Juanes</h2>
                 </div>
-
-                <div>
-                    <img src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo oeuvre">
-                    <h2>Juan de Juanes</h2>
-                    <a>En savoir plus</a>
+                <div class="carte__caption">
+                    <a class="carte__en-savoir-plus">En savoir plus</a>
                 </div>
+            </article>
 
-                <div>
-                    <img src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échec Sofonisba">
-                    <h2>Sofonisba Anguissola</h2>
-                    <a>En savoir plus</a>
+              <article class="carte">
+                <div class="carte__div-img">
+                    <img class="carte__img" src="/public/img/sofonisba/jeu-echec.webp" alt="Sofonisba">
+                    <h2 class="carte__texte">Sofonisba Anguissola</h2>
                 </div>
-
-                <div>
-                    <img src="/public/img/titien/allocution.webp" alt="Allocution de d'Alphonse">
-                    <h2>Titten</h2>
-                    <a>En savoir plus</a>
+                <div class="carte__caption">
+                    <a class="carte__en-savoir-plus">En savoir plus</a>
                 </div>
+            </article>  
 
-                <p>Ces artistes ont puisé leur première source d’inspiration dans l’art de Raphaël et de Michel-Ange. 
+
+
+            <article class="carte">
+              <div class="carte__div-img">
+                  <img class="carte__img" src="/public/img/titien/allocution.webp" alt="Titten">
+                  <h2 class="carte__texte">Titten</h2>
+              </div>
+              <div class="carte__caption">
+                  <a class="carte__en-savoir-plus">En savoir plus</a>
+              </div>
+            </article>
+
+                <p class="mouvement__texte">Ces artistes ont puisé leur première source d’inspiration dans l’art de Raphaël et de Michel-Ange. 
                     Privilégiant l’artificialité, rejetant les lois de la perspective albertienne, ils magnifient l’arabesque, 
                     le mouvement, la gestualité au détriment de la pensée classique. Le maniérisme annonce en quelque sorte le style baroque.
                 </p>
 
-                <p>« Ce qu’on doit bien comprendre avec le maniérisme, c’est qu’il a une dimension ludique,
+                <p class="mouvement__texte">« Ce qu’on doit bien comprendre avec le maniérisme, c’est qu’il a une dimension ludique,
                      le paradoxe maniériste étant très souvent un jeu. »</p>
 
-                <h3>Nos artistes dans le temps</h3>
+                <h3 class="mouvement__titre">Nos artistes dans le temps</h3>
 
-                <div>
+                <div class="frise">
 
                     <article>
-                      <div>
+                      <div class="frise__texte">
                         <h2>1844 - 1576</h2>
                         <p>Titien</p>
                       </div>
                     </article>
             
                     <article>
-                      <div>
+                      <div class="frise__texte">
                         <h2>1507 - 1579</h2>
                         <p>Juan de Juanes</p> 
                       </div>
                     </article>
             
                     <article>
-                      <div>
+                      <div class="frise__texte">
                         <h2>1535 - 1625</h2>
                         <p>Sofonisba Anguissolas</p> 
                       </div>
                     </article>
             
                     <article>
-                      <div>
+                      <div class="frise__texte">
                         <h2>1546 - 1611</h2>
                         <p>Bartholomeus Spranger</p> 
                       </div>
                     </article>
             
-                  </div>
+                </div>
         
-        </main>
+         </main>
 <!--fin de main-->
 
 <!--début footer-->
