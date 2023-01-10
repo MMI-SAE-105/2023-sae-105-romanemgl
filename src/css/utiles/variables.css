@@ -14,4 +14,9 @@
 --button: 12px;
 --body-text: 15px;
 --commentaires: 24px;
+
+--font-titre: 'Bebas Neue';
+--font-texte: 'Cormorant Garamond', serif;
+--font-commentaire:'Passions Conflict', sans-serif;
 }
+
