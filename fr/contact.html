@@ -30,23 +30,51 @@
         
 
         <!--début menu-->
-            
-       <!-- <nav class="menu">
-                <h3 class="menu__titre">Nos artistes</h3>
+        <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"class="header__menuBtn">
+            <img src="/public/img/icones/menu.svg" alt="menu">
+          </button>
+
+            <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+
                 <ul class="menu__texte-liste">
-                    <li><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
-                    <li><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
-                    <li><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
-                    <li><a class="menu__texte" href="/fr/titien.html">Titien</a></li>
+                    <p class="menu__titre"> Nos articles </p>
+
+                    <li class="menuitem"><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
+
+                    <li class="menuitem"><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
+                            
+                    <li class="menuitem"><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
+                    
+                    <li class="menuitem"><a class="menu__texte" href="/fr/titien.html">Titien</a></li>       
                 </ul>
-                <h3 class="menu__titre">à propos</h3>
                 <ul class="menu__texte-liste">
-                    <li><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
-                    <li><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
-                    <li><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
+                    <p class="menu__titre">à propos</p>
+
+                    <li class="menuitem"><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
+
+                    <li class="menuitem"><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque</a></li>
+
+                    <li class="menuitem"><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
                 </ul>
-            </nav>-->     
-        </div>
+
+<!--
+            </nav>
+            <nav class="menu">
+                     <h3 class="menu__titre">Nos artistes</h3>
+                     <ul class="menu__texte-liste">
+                         <li><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
+                         <li><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
+                         <li><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
+                         <li><a class="menu__texte" href="/fr/titien.html">Titien</a></li>
+                     </ul>
+                     <h3 class="menu__titre">à propos</h3>
+                     <ul class="menu__texte-liste">
+                         <li><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
+                         <li><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
+                         <li><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
+                     </ul>
+                 </nav>     
+             </div> -->
 <!--fin menu-->
     </header>
 <!--fin header-->   

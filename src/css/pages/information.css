@@ -1,0 +1,14 @@
+.info__retrouver-nous {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.info__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.info__texte {
+    font-family: var(--font-texte);
+}

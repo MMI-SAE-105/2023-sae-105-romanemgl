@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maniérisme : l'avant garde du baroque</title>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="icon" href="/public/img/icones/logo_site.svg" />
+    <link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
+
+    <script defer src="https://unpkg.com/alpinejs%22%3E%22%3E"></script>
 </head>
 
 <body>
@@ -43,8 +51,8 @@
     </header>
 <!--fin header-->      
 
-<!--début body-->
-    <main>
+<!--début main-->
+    <main class="container">
         <img src="/public/img/header/header-image1.webp">
         <img src="/public/img/header/header-image2.webp">
         <img src="/public/img/header/header-image3.webp">
@@ -52,9 +60,9 @@
         <img src="/public/img/icones/chevron-blanc.svg">
         <img src="/public/img/icones/chevron-blanc.svg">
 
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                     
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
             
         <div>
             <img src="/public/img/sofonisba/jeu-echec.webp" alt="L'exposition temporaire">
@@ -100,27 +108,36 @@
 
     
     </main>
-
-    <footer>
-        <img src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
+<!--fin main-->
+<!--début footer-->
+    <footer class="footer">
+        <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
         
          
-        <h3> à propos</h3>
+        <h3 class="footer__titre-footer"> à propos</h3>
            
-        <p>L’exposition temporaire</p>
-        <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <p class="footer__texte">L’exposition temporaire</p>
+        <p class="footer__texte">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
 
-        <h3>contact</h3>
-        <img src="/public/img/icones/telephone.svg" alt="logo telephone">
-        <p>01 42 18  56 50</p>       
-        
-        <img src="/public/img/icones/mail.svg" alt="logo mail">
-        <p>info.reservation@fondation.cartier.com</p>
+        <h3 class="footer__titre-footer">contact</h3>
 
+        <div class="footer__contact">
+        <img class="footer__contact-icone" src="/public/img/icones/telephone.svg" alt="logo telephone">
+        <p class="footer__contact-texte">01.42.18.56.50</p>       
+        </div>
         
-        <img src="/public/img/icones/instagram.svg" alt="logo instagram">
-        <img src="/public/img/icones/facebook.svg" alt="logo facebook">
-        <img src="/public/img/icones/logo_mmi.svg" alt="logo mmi">
+        <div class="footer__contact">
+            <img class="footer__contact-icone" src="/public/img/icones/mail.svg" alt="logo mail">
+            <p class="footer__contact-texte">info.reservation@fondation.cartier.com</p>
+        </div>
+
+        <div class="footer__div-icone-reseau">
+            <a href="https://www.instagram.com/fondationcartier/?hl=fr"><img class="footer__icone-reseau" src="/public/img/icones/instagram.svg" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/FondationCartier/?locale=fr_FR"><img class="footer__icone-reseau" src="/public/img/icones/facebook.svg" alt="logo facebook"></a>
+            <a href="https://www.google.com/search?q=mmi+montbeliard&rlz=1C1VDKB_frFR1038FR1038&oq=mmi+&aqs=chrome.0.69i59j69i57j46i175i199i512j46i131i175i199i433i512j46i175i199i512j69i65j69i60l2.1730j0j4&sourceid=chrome&ie=UTF-8"><img class="footer__icone-reseau" src="/public/img/icones/logo_mmi.svg" alt="logo mmi"></a>
+        </div>
+
     </footer>
+<!--fin footer-->
 </body>
 </html>

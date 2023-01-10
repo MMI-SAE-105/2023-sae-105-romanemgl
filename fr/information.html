@@ -7,7 +7,8 @@
     <title>Information sur l'expo</title>
 
 <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/style.css">
+<link rel="icon" href="/public/img/icones/logo_site.svg" />
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -28,16 +29,7 @@
                     <img src="/public/img/icones/menu.svg" alt="logo menu">
                 </button>
                 <!--début header-->
-    <header>
-        <img src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
 
-       
-        <img src="/public/img/icones/globe.svg" alt="logo globe">
-        
-    
-        <button>
-            <img src="/public/img/icones/menu.svg" alt="logo menu">
-        </button>
 <!--début menu-->
 <div>
     <button></button> 
@@ -64,48 +56,54 @@
         
 <!--fin header-->
 <!--début main>-->
-        <main>
-            <h1>Maniérisme : l'avant garde du baroque</h1>
+        <main class="container">
+            <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-                <p>Exposition temporaire</p>
+                <p class="exposition-temporaire">Exposition temporaire</p>
                         
-                    <h2>La billeterie</h2>
+                    <h2 class="info__retrouver-nous" >Où nous retrouver ?</h2>
 
-                    <h3>Le lieu et les horaires</h3>
-                    <p>Dates de l’exposition : 
+                    <h3 class="info__titre">Le lieu et les horaires</h3>
+                    <p class="info__texte">Dates de l’exposition : 
                         Du 13 avril au 23 juin 2023</p>
 
-                    <p>Lieu de l’exposition : 
+                    <p class="info__texte">Lieu de l’exposition : 
                         Fondation Cartier, 261 Bd Raspail 
                         75014 Paris</p>
 
-                    <p>Horaires d’ouverture : 
+                    <p class="info__texte">Horaires d’ouverture : 
                         Tous les jours de 11h à 20h, sauf le lundi. 
                         Nocturne le mardi, jusqu'à 22h. 
                         La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
 
 
-                    <h3>Les tarifs</h3>
+                    <h3 class="info__titre">Les tarifs</h3>
 
-                    <p>Plein tarifs 11€</p>
-                    <p>Tarifs réduits 11,50€</p>
-                    <p>Réduction 13 - 25 ans 5€</p>
-                    <p>Fondation Cartier Pass 18€ - 50€</p>
-                    <p> Moins de 13 ans, 
+                    <p class="info__texte">Plein tarifs 11€</p>
+                    <p class="info__texte">Tarifs réduits 11,50€</p>
+                    <p class="info__texte">Réduction 13 - 25 ans 5€</p>
+                    <p class="info__texte">Fondation Cartier Pass 18€ - 50€</p>
+                    <p class="info__texte"> Gratuit pour les moins de 13 ans, 
                         Laissez-passer annuel, 
                         Carte Icom, 
-                        Carte de presse,                  Gratuit
+                        Carte de presse,                  
                         Carte d'invalidité,       
                         Fondation Cartier Pass, 
                         Etudiants</p>
 
+                    <h3 class="info__titre">réservez vos tickets</h3>
 
-                    <h3>réservez vos tickets</h3>
-                    <div>
-                        <img src="/public/img/sofonisba/auto-portrait.webp" alt="Auto Portrait de Sofonisba">
-                        <h2>La billeterie</h2>
-                        <a>En savoir plus</a>
-                    </div>
+
+                    <article class="carte">
+                        <div class="carte__div-img">
+                            <img class="carte__img" src="/public/img/sofonisba/auto-portrait.webp" alt="Auto Portrait de Sofonisba">
+                            <h2 class="carte__texte">La billeterie</h2>
+                        </div>
+                        <div class="carte__caption">
+                            <a class="carte__en-savoir-plus">En savoir plus</a>
+                        </div>
+                    </article>
+                    
         </main>
 <!--fin main-->
 <!--début footer-->

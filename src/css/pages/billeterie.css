@@ -1,0 +1,14 @@
+.billeterie {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.billeterie__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.billeterie__tarifs {
+    font-family: var(--font-texte);
+}

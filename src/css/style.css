@@ -30,13 +30,23 @@ Soyez attentifs à l'ordre d'import :
 /* Règles de composition */
 
 
-/* Composants */
+/* Composants et layout */
 @import "/src/css/layout/footer.css";
 
 @import "/src/css/layout/header.css";
 
 @import "/src/css/components/menu.css";
 
+@import "/src/css/components/carte.css";
+
+
+
 /* Pages */
 
 @import "/src/css/pages/contact.css";
+
+@import "/src/css/pages/index.css";
+
+@import "/src/css/pages/information.css";
+
+@import "/src/css/pages/billeterie.css";
