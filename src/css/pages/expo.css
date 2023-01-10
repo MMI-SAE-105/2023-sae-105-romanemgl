@@ -18,6 +18,7 @@
 .frise__texte {
     text-align: center;
     margin: auto;
+    font-family: var(--font-titre);
 }
 
 .frise {
@@ -44,7 +45,7 @@
   
 .frise article {
       position: relative;
-      width: calc( 20% - 11px);
+      width: calc( 20% - 23px);
       padding: 15px;
       padding-right: 35px;
 }
