@@ -31,5 +31,6 @@ Soyez attentifs à l'ordre d'import :
 
 
 /* Composants */
+@import "/src/css/layout/footer.css";
 
 /* Pages */
