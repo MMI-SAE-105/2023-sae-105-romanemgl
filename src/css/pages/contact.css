@@ -1,0 +1,42 @@
+.contact__texte {
+    font-family: var(--texte);
+}
+
+.contact__formulaire {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.contact {
+    font-family: var(--font-texte);
+    margin-top: 10px;
+}
+
+.contact__envoyer {
+    display: block;
+    font-family: var(--font-titre);
+    margin-left: 70%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid var(--marron);
+    text-align: center;
+    background-color: var(--blanc);
+}
+
+.contact__case {
+    border-radius: 10px;
+    border-width: 0;
+
+}
+
+.contact__case-message {
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.contact__form-label{
+    display: block;
+}

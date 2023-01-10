@@ -38,3 +38,5 @@ Soyez attentifs à l'ordre d'import :
 @import "/src/css/components/menu.css";
 
 /* Pages */
+
+@import "/src/css/pages/contact.css";
