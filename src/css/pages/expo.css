@@ -15,6 +15,11 @@
     margin-top: 10px;
 }
 
+.mouvement__citation {
+      font-family: var(--font-commentaire);
+      font-size: 32px;
+}
+
 .mouvement__texte-galerie {
       font-family: var(--font-texte);
 }
