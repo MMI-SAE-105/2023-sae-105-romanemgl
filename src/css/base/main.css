@@ -25,7 +25,10 @@ body {
 
 .figcaption__texte {
     font-family: var(--font-commentaire);
+    font-size: large;
     text-align: center;
+    margin-top: 10px;
+
 }
 
 .article__img-manierisme{

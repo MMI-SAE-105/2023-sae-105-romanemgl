@@ -30,6 +30,7 @@
 <button class="header_menuBtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
     <img class="header__icone" src="/public/img/icones/menu.svg" alt="menu">
 </button>
+
 <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <div class="menu__top">
         <img class="header__logo-site" src="/public/img/icones/logo-blanc.svg" alt="logo Maniérisme expo">
@@ -58,12 +59,10 @@
 
 <!--début main-->
     <main class="container">
-        <img src="/public/img/header/header-image1.webp">
-        <img src="/public/img/header/header-image2.webp">
-        <img src="/public/img/header/header-image3.webp">
 
-        <img src="/public/img/icones/chevron-blanc.svg">
-        <img src="/public/img/icones/chevron-blanc.svg">
+        
+        <img class="index__image-header" src="/public/img/header/header-image1.webp">
+        
 
         <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                     
@@ -95,7 +94,56 @@
 
         <h3 class="index__titre">Les artistes emblématiques</h3>
 
-        
+        <div class="carrousel">      
+            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><img src="/public/img/icones/chevron-gauche-blanc.svg" alt="flèche gauche"></button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"><img src="/public/img/icones/chevron-droite-blanc.svg" alt="flèche droite"></button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                               
+                                
+                                
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <a href="/fr/bartholomeus.html"><img src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="image ecran 1"></a>
+                            <figcaption><a class="carrousel__texte" href="/fr/bartholomeus.html">Bartholomeus</figcaption></a>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <a href="/fr/juan.html"><img src="/public/img/juan/juan-juanes.webp" alt="image ecran 2"></a>
+                            <figcaption><a class="carrousel__texte" href="/fr/juan.html">Juan de Juanes</a></figcaption>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <a href="/fr/titien.html"><img src="/public/img/titien/portrait-titien.webp" alt="image ecran 3"></a>
+                            <figcaption><a class="carrousel__texte" href="/fr/titien.html">Titien</figcaption></a>
+                        </figure>
+                    </div>
+
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <a href="/fr/sofonisba.html"><img src="/public/img/sofonisba/portrait-sofonisba.webp" alt="image ecran 4"></a>
+                            <figcaption><a class="carrousel__texte" href="/fr/sofonisba.html">Sofonisba</a></figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--
         <article class="carte">
             <div class="carte__div-img">
                 <img class="carte__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus Spranger">
@@ -136,7 +184,7 @@
             <div class="carte__caption">
                 <a class="carte__en-savoir-plus">En savoir plus</a>
             </div>
-        </article>
+        </article>-->
 
     
     </main>
