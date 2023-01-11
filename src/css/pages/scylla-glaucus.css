@@ -1,0 +1,14 @@
+.scylla-glaucus__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.scylla-glaucus__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.scylla-glaucus__texte {
+    font-family: var(--font-texte);
+}

@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -58,43 +58,53 @@
 <!--fin menu-->
 </header>
 <!--fin header-->  
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>Scylla et Glaucus</h2>
+        <h2 class="scylla-glaucus__titre-principal">Scylla et Glaucus</h2>
 
         <figure>
             <img src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Scylla et Glaucus">
-            <figcaption>Le fameux tableau</figcaption>
+            <figcaption class="figcaption__texte">Le fameux tableau</figcaption>
         </figure>
 
-        <p>Scylla et Glaucus est une tragédie lyrique en un prologue et cinq actes de Jean-Marie Leclair. Le livret est d'un certain « d'Albaret », inconnu par ailleurs : celui-ci a tiré son intrigue des Métamorphoses d'Ovide (livre XIV).
+        <p class="scylla-glaucus__texte">Scylla et Glaucus est une tragédie lyrique en un prologue et cinq actes de Jean-Marie Leclair. Le livret est d'un certain « d'Albaret », inconnu par ailleurs : celui-ci a tiré son intrigue des Métamorphoses d'Ovide (livre XIV).
             Seul opéra de Leclair, qui le composa en 1746, sa première représentation eut lieu le 4 octobre 1746 à l'Académie royale de musique. Il y eut 17 autres représentations pendant cette saison, puis l'œuvre fut reprise à Lyon en 1750 et 1755. Au xxe siècle, l'œuvre a été ressuscitée pour la première fois à Londres en 1979 par John Eliot Gardiner, et enregistrée par le même en 1979 (BBC / European Broadcasting Union) et 1986 (Disques Erato).
         </p>
 
         <figure>
             <img src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-            <figcaption>L'artiste</figcaption>
+            <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p>Les habitants d'Amathonte célèbrent une fête en l'honneur de Vénus, la déesse de l'amour. Un tumulte se produit lorsque les Propétides veulent renverser les autels de la fausse déesse. Vénus descend des cieux et les menace. Elle loue le roi et lui présente son fils, le petit dieu Amour, qu'elle envoie en Sicile pour y vaincre la fière Scylla, laquelle dédaigne ses nombreux prétendants.
+        <p class="scylla-glaucus__texte">Les habitants d'Amathonte célèbrent une fête en l'honneur de Vénus, la déesse de l'amour. Un tumulte se produit lorsque les Propétides veulent renverser les autels de la fausse déesse. Vénus descend des cieux et les menace. Elle loue le roi et lui présente son fils, le petit dieu Amour, qu'elle envoie en Sicile pour y vaincre la fière Scylla, laquelle dédaigne ses nombreux prétendants.
         </p>
 
-        <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="scylla-glaucus__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
-        <div>
-            <img src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du Christ">
-            <h2>Lamentation du Christ</h2>
-            <a>En savoir plus</a>
-        </div>
 
-        <div>
-            <img src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-            <h2>bartholomeus</h2>
-            <a>En savoir plus</a>
-        </div>
+
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du Christ">
+                <h2 class="carte__texte">Lamentation du Christ</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
+                <h2 class="carte__texte">Bartholomeus</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
     </main>
 <!--fin du main-->
 <!--début footer-->
