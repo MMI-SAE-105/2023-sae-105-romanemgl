@@ -61,7 +61,27 @@
 
     <main class="container">
         <h1>Cette page existe pas : Erreur 404</h1>
-        <a href="/fr/index.html">Accueil</a>
+        <p>Liste des page disponibles :</p>
+        <ul>
+            <li><a href="/fr/index.html">Index</a></li>
+            <li><a href="/fr/bartholomeus.html">Bartholomeus</a></li>
+            <li><a href="/fr/juan.html">Juan</a></li>
+            <li><a href="/fr/titien.html">Titien</a></li>
+            <li><a href="/fr/sofonisba.html">Sofonisba</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+            <li><a href="/fr/expo.html">Le maniérisme</a></li>
+            <li><a href="/fr/information.html">Informations</a></li>
+        </ul>
+        <p>Recherche sur le site</p>
+        <h2>Recherche sur le site :</h2>
+        <form action="https://manierisme.romane-miguel.fr/" method="GET" 
+            x-data="{ q:'', }" 
+            x-on:submit="q = q + ' site:manierisme.romane-miguel.fr/'">
+            <label for="q" class="article__header-text">Que rechercher-vous :</label>
+            <input type="text" id="q" name="q" x-model="q">
+            <button class="article__text" type="submit">Rechercher</button>
+        </form>
+
     </main>
 <!--début footer-->
 <footer class="footer">
