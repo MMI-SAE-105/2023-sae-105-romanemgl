@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"  x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +10,8 @@
     <link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
-
-    <script defer src="https://unpkg.com/alpinejs%22%3E%22%3E"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
 
 </head>
 <body>
@@ -26,55 +25,35 @@
             <a href="/index.html">
                 <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
             </a>
-            <button class="header__icone"><img  src="/public/img/icones/menu.svg" alt="logo menu"></button>
-        
 
         <!--début menu-->
-        <button class="header__menu-btn menu-btn" aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"class="header__menuBtn">
-            <img src="/public/img/icones/menu.svg" alt="menu">
-          </button>
+            <button class="header_menuBtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <img class="header__icone" src="/public/img/icones/menu.svg" alt="menu">
+            </button>
+        <!-- Menu principal -->
+            <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <div class="menu__top">
+                    <img class="header__logo-site" src="/public/img/icones/logo-blanc.svg" alt="logo Maniérisme expo">
+                    <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
+                        <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
+                    </button>
+                </div>
 
-            <nav class="menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
-
-                <ul class="menu__texte-liste">
+               <ul class="menu__texte-liste">
                     <p class="menu__titre"> Nos articles </p>
-
-                    <li class="menuitem"><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
-
-                    <li class="menuitem"><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
-                            
-                    <li class="menuitem"><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
-                    
-                    <li class="menuitem"><a class="menu__texte" href="/fr/titien.html">Titien</a></li>       
+                    <li class="menu__item"><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
+                    <li class="menu__item"><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
+                    <li class="menu__item"><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>               
+                    <li class="menu__item"><a class="menu__texte" href="/fr/titien.html">Titien</a></li>       
                 </ul>
                 <ul class="menu__texte-liste">
                     <p class="menu__titre">à propos</p>
-
-                    <li class="menuitem"><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
-
-                    <li class="menuitem"><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque</a></li>
-
-                    <li class="menuitem"><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
-                </ul>
-
-<!--
+                    <li class="menu__item"><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
+                    <li class="menu__item"><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque</a></li>
+                    <li class="menu__item"><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
+                </ul> 
             </nav>
-            <nav class="menu">
-                     <h3 class="menu__titre">Nos artistes</h3>
-                     <ul class="menu__texte-liste">
-                         <li><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
-                         <li><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
-                         <li><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
-                         <li><a class="menu__texte" href="/fr/titien.html">Titien</a></li>
-                     </ul>
-                     <h3 class="menu__titre">à propos</h3>
-                     <ul class="menu__texte-liste">
-                         <li><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
-                         <li><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
-                         <li><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
-                     </ul>
-                 </nav>     
-             </div> -->
+        </div>         
 <!--fin menu-->
     </header>
 <!--fin header-->   
@@ -150,3 +129,4 @@
 <!--fin footer-->
 </body>
 </html>
+

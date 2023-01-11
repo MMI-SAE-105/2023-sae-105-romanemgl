@@ -1,23 +1,67 @@
+ /* Pour construire le menu en mobile : 
+On construit le menu tel qu'il sera une fois ouvert.
+On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
 .menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
     background-color: var(--marron);
-   
-}
+    transition: all .4s ease-in-out;
+    width: 100vw;
+    height: 100vh;;
+    display: block;
+    padding-top: 100px;
+    z-index: 4;
+  }
+    
+  /* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+  .menu--open {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+  }
 
-.menu__titre {
-    font-size: var(--heading-1);
-    font-family: var(--font-titre);
-    margin-left: 20px;
-    color: var(--blanc);
-    letter-spacing: 0.1rem;
-}
+  .menu__top {
+    background-color: var(--marron);
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    top: 0;
+    margin-top: -90px;
+    margin-bottom: 100px;
+  }
+  
+  .menu__icone-croix {
+    position: relative;
+    z-index: 5;
+    background-color: var(--marron);
+    border: 0;
+  }
 
-.menu__texte-liste {
+  .menu__texte-liste {
     list-style: none;
     text-underline-position: none;
-}
+  }
+
+  .menu__titre {
+    font-size: var(--heading-1);
+    font-family: var(--font-titre);
+    color: var(--blanc);
+    letter-spacing: 0.1rem;
+  }
+
+.menu__item {
+  padding-bottom: 0.5rem;
+  }
 
 .menu__texte {
-    text-decoration: none;
-    color: var(--beige);
-    font-family: var(--font-titre);
+  text-decoration: none;
+  color: var(--beige);
+  font-family: var(--font-titre); 
+  font-size: var(--heading-2);
 }
+
+

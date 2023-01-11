@@ -18,3 +18,7 @@
 body {
     background-color: var(--beige-clair);
 }
+
+.noscroll, .noscroll body {
+    overflow: hidden;
+  }
