@@ -1,0 +1,14 @@
+.sofonisba__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.sofonisba__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.sofonisba__texte {
+    font-family: var(--font-texte);
+}

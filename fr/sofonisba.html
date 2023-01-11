@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -65,30 +65,41 @@
                         
         <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2 class="">Sofonisba Anguissola</h2>
+        <h2 class="sofonisba__titre-principal">Sofonisba Anguissola</h2>
 
         <figure>
             <img src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
-            <figcaption>L'artiste</figcaption>
+            <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p>Sofonisba Anguissola (1531/32-1626) bien que femme et noble, est devenue un peintre reconnu et a admirablement réussi dans un domaine jusqu’alors réservé exclusivement aux hommes.
+        <p class="sofonisba__texte">Sofonisba Anguissola (1531/32-1626) bien que femme et noble, est devenue un peintre reconnu et a admirablement réussi dans un domaine jusqu’alors réservé exclusivement aux hommes.
             Portraitiste de grand talent, elle fut appelée à la cour du roi Philippe II d’Espagne, où elle fut dame d’honneur de la reine et peintre de la famille royale. Cette artiste occupe une place tout à fait particulière dans l’histoire de la peinture de son temps et elle ouvrit la voie à d’autres femmes peintres, comme Artemisia Gentileschi, qui, comme elle, fut oubliée parce qu’elle était femme, et redécouverte parce qu’elle était femme. 
         </p>
 
-        <h3>ses oeuvres présentes à l’expo</h3>
+        <h3 class="sofonisba__titre">ses oeuvres présentes à l’expo</h3>
 
-        <div>
-            <img src="/public/img/sofonisba/jeu-echec.webp" alt="Jeux d'échecs">
-            <h2>Jeu d'échec</h2>
-            <a>En savoir plus</a>
-        </div>
 
-        <div>
-            <img src="/public/img/sofonisba/auto-portrait.webp" alt="Auto Portrait">
-            <h2>Auto portrait</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échecs">
+                <h2 class="carte__texte">Jeu d'échecs</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/auto-portrait.webp" alt="Auto portrait">
+                <h2 class="carte__texte">Auto Portrait</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
+        
 
 <!--fin du main-->
     </main>
