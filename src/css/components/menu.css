@@ -29,9 +29,8 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    top: 0;
     margin-top: -90px;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
   }
   
   .menu__icone-croix {
@@ -39,6 +38,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
     z-index: 5;
     background-color: var(--marron);
     border: 0;
+    padding-right: 15px;
   }
 
   .menu__texte-liste {
