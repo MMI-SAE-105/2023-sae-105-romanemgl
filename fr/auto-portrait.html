@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -59,42 +59,51 @@
 </header>
 <!--fin header-->  
 
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>Auto Portrait</h2>
+        <h2 class="auto-portrait__titre-principal">Auto Portrait</h2>
 
         <figure>
             <img src="/public/img/sofonisba/auto-portrait.webp" alt="Auto Portrait">
-            <figcaption> Auto Portrait</figcaption>
+            <figcaption class="figcaption__texte"> Auto Portrait</figcaption>
         </figure>
 
-        <p>La biographie de cette artiste met en évidence le caractère exceptionnel de son destin de femme peintre. Outre les portraits de cour et les commandes publiques qu’elle honora, Sofonisba laissa une riche série d’autoportraits, oscillant entre dix et vingt, selon les sources. C’est d’ailleurs l’artiste qui a laissé le plus grand nombre d’images de sa personne, à cette époque.  
+        <p class="auto-portrait__texte">La biographie de cette artiste met en évidence le caractère exceptionnel de son destin de femme peintre. Outre les portraits de cour et les commandes publiques qu’elle honora, Sofonisba laissa une riche série d’autoportraits, oscillant entre dix et vingt, selon les sources. C’est d’ailleurs l’artiste qui a laissé le plus grand nombre d’images de sa personne, à cette époque.  
         </p>
 
         <figure>
             <img src="/public/img/sofonisba/potrait-famille.webp" alt="Fmaille de Sofonisba">
-            <figcaption>L'artiste et sa famille</figcaption>
+            <figcaption class="figcaption__texte">L'artiste et sa famille</figcaption>
         </figure>
 
-        <p>Cela tient en partie à sa condition de femme : pouvant difficilement obtenir des commandes religieuses ou publiques à ses débuts, elle peignait essentiellement des portraits. Avant d’atteindre la notoriété, elle représentait sa famille ou elle-même. Elle s’exerçait ainsi à mieux cerner la personnalité de ses modèles et à progresser dans cet art qui allait la rendre célèbre.            
+        <p class="auto-portrait__texte">Cela tient en partie à sa condition de femme : pouvant difficilement obtenir des commandes religieuses ou publiques à ses débuts, elle peignait essentiellement des portraits. Avant d’atteindre la notoriété, elle représentait sa famille ou elle-même. Elle s’exerçait ainsi à mieux cerner la personnalité de ses modèles et à progresser dans cet art qui allait la rendre célèbre.            
         </p>
 
-        <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="auto-portrait__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
-        <div>
-            <img src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
-            <h2>Sofonisba</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
+                <h2 class="carte__texte">Sofonisba</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 
-        <div>
-            <img src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échec">
-            <h2>Jeu d'échec</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/jeu-echec.webp" alt="Partie d'échec">
+                <h2 class="carte__texte">Partie d'échec</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
 <!--fin du main-->
     </main>
 <!--début footer-->

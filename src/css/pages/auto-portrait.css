@@ -1,0 +1,14 @@
+.auto-portrait__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.auto-portrait__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.auto-portrait__texte {
+    font-family: var(--font-texte);
+}
