@@ -10,9 +10,9 @@
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <script defer src="https://unpkg.com/alpinejs%22%3E%22%3E"></script>
 
 </head>
 <body>
@@ -129,7 +129,22 @@
                 <p class="mouvement__texte">« Ce qu’on doit bien comprendre avec le maniérisme, c’est qu’il a une dimension ludique,
                      le paradoxe maniériste étant très souvent un jeu. »</p>
 
-                <h3 class="mouvement__titre">Nos artistes dans le temps</h3>
+        <h3 class="mouvement__titre">Nos artistes dans le temps</h3>
+
+                     <section 
+                        class="expo__section-bouton" 
+                        x-data="{open:false}">
+
+                        <button class="expo__bouton" @click="open = !open">
+                          <img src="/public/img/icones/personne.svg" alt="icone personnes">
+                          <p class="expo__bouton-clique">Mieux les connaitre</p>
+                        </button>
+                  
+                        <p x-show="open">
+                                Dans cette exposition, vous allez rencontrez de multiples artistes du maniérisme : Sofonisba Anguissola, Juan de Juanes, Bertholomeus et Titien. 
+                                Enfin, en 1792, Luigi Lanzi crée le terme de maniérisme (manierismo) dont il donne une analyse critique entièrement négative (o sia alterazione del vero), lui déniant toute originalité puisqu'il est basé sur la seule imitation et la répétition des mêmes formules.
+                        </p>
+                    </section>
 
                 <div class="frise">
 
