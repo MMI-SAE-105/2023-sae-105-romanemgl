@@ -17,3 +17,8 @@
     font-family: var(--font-titre);
     color: var(--marron);
 }
+
+.juan__image-musee {
+    width: 285px;
+    height: 128px;
+}
