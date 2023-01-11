@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -59,45 +59,52 @@
     </header>
 <!--fin header-->  
 
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>Jeu d'échecs</h2>
+        <h2 class="jeu-echec__titre-principal">Jeu d'échecs</h2>
 
         <figure>
             <img src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échec">
-            <figcaption>Jeu d'échec</figcaption>
+            <figcaption class="figcaption__texte">Jeu d'échec</figcaption>
         </figure>
 
-        <p>La famille Anguissola appartient à la petite noblesse de Crémone, ville de Lombardie en Italie du nord. Amilcare, le père de Sofonisba, est un homme cultivé et ouvert d'esprit, un humaniste du 16e siècle qui s'intéresse à l'Antiquité. Aussi donne-t-il à ses filles une éducation orientée vers la culture et comportant lecture, dessin et musique. La famille comporte six filles et un garçon, Sofonisba étant l’aînée. 
+        <p class="jeu-echec__texte">La famille Anguissola appartient à la petite noblesse de Crémone, ville de Lombardie en Italie du nord. Amilcare, le père de Sofonisba, est un homme cultivé et ouvert d'esprit, un humaniste du 16e siècle qui s'intéresse à l'Antiquité. Aussi donne-t-il à ses filles une éducation orientée vers la culture et comportant lecture, dessin et musique. La famille comporte six filles et un garçon, Sofonisba étant l’aînée. 
         </p>
 
         <figure>
             <img src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
-            <figcaption>L'artiste</figcaption>
+            <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p>Dès l’âge de quinze ans, vers 1546, Sofonisba et sa jeune sœur Elena étudient la peinture auprès d’un peintre de Crémone, Bernardino Campi. Plus tard, elle complète sa formation à Rome puis commence à être remarquée par des commanditaires. Elle deviendra la portraitiste de la cour d’Espagne entre 1559 et 1578.
+        <p class="jeu-echec__texte">Dès l’âge de quinze ans, vers 1546, Sofonisba et sa jeune sœur Elena étudient la peinture auprès d’un peintre de Crémone, Bernardino Campi. Plus tard, elle complète sa formation à Rome puis commence à être remarquée par des commanditaires. Elle deviendra la portraitiste de la cour d’Espagne entre 1559 et 1578.
             La partie d’échecs est donc une œuvre de jeunesse créée avant la gloire acquise auprès du roi d’Espagne Philippe II (1527-1598) et de sa jeune épouse, Elisabeth de Valois (1545-1568), dont Sofonisba fut la dame d’honneur et l’amie, les deux femmes ayant approximativement le même âge.            
         </p>
 
-        <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="jeu-echec__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
-        <div>
-            <img src="/public/img/sofonisba/auto-portrait.webp" alt="Auto portrait">
-            <h2>Auto portrait</h2>
-            <a>En savoir plus</a>
-        </div>
 
-        <div>
-            <img src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
-            <h2>Sofonisba</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/auto-portrait.webp" alt="Auto portrait">
+                <h2 class="carte__texte">Auto Portrait</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 
-        
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
+                <h2 class="carte__texte">Sofonisba</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 
     </main>
 <!--fin main-->

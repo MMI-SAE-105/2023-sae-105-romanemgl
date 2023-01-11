@@ -1,0 +1,14 @@
+.jeu-echec__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.jeu-echec__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.jeu-echec__texte {
+    font-family: var(--font-texte);
+}
