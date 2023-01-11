@@ -3,6 +3,12 @@
 - PRÉNOM : Romane
 - URL du site : http://manierisme.romane-miguel.fr/
 - URL FIGMA : https://www.figma.com/file/W25r418yg0dYqNYe78Df2D/SAE-105-Romane-MIGUEL?node-id=209%3A408&t=PYUJeQQEclIhVjtB-1
+URL DE LIGHTHOUSE : https://manierisme.romane-miguel/reports/contact.html
+- https://manierisme.romane-miguel/reports/information.html
+- https://manierisme.romane-miguel/reports/expo.html
+- https://manierisme.romane-miguel/reports/artiste.html
+- https://manierisme.romane-miguel/reports/oeuvre.html 
+- https://manierisme.romane-miguel/reports/accueil.html
 
 # Structure de départ pour la SAE 105.
 
