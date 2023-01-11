@@ -1,0 +1,15 @@
+.la-cene__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.la-cene__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.la-cene__texte {
+    font-family: var(--font-texte);
+}
+

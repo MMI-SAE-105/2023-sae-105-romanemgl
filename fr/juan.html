@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -58,23 +58,23 @@
 <!--fin menu-->
 </header>
 <!--fin header-->  
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>Juan de Juanes</h2>
-        <p>Juan de Juanes (Joan de Joanes en valencien), né Vicente Juan Masip (ou Macip), fils de Vicente Masip à Valence (Espagne) 
+        <h2 class="juan__titre-principal">Juan de Juanes</h2>
+        <p class="juan__texte">Juan de Juanes (Joan de Joanes en valencien), né Vicente Juan Masip (ou Macip), fils de Vicente Masip à Valence (Espagne) 
             vers 1507 et mort Bocairente (Espagne) le 21 décembre 1579, est un peintre de la Renaissance (le plus important de son époque
              à Valence, et surnommé le second Raphaël). Il s'est consacré principalement à l'iconographie religieuse.
         </p>
 
         <figure>
             <img src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
-            <figcaption>Juan de Juanes</figcaption>
+            <figcaption class="figcaption__texte">Juan de Juanes</figcaption>
         </figure>
 
-        <p>Le père de Juan de Juanes , Juan Vicente Masip est un peintre reconnu à Valence. L'attribution de certaines œuvres au père ou 
+        <p class="juan__texte">Le père de Juan de Juanes , Juan Vicente Masip est un peintre reconnu à Valence. L'attribution de certaines œuvres au père ou 
             au fils est incertaine. Juan de Juanes se forme à Valence, dans l'atelier de son père puis en Italie, à Rome, dans l'atelier 
             d'un élève de Raphaël. De retour à Valence il mène une vie austère et peint essentiellement des œuvres de piété. Il est considéré
              comme le fondateur de l'École de Valence. Le musée du Prado possède 18 de ses tableaux.
@@ -82,26 +82,36 @@
 
         <figure>
         <img src="/public/img/juan/musee-prado.webp" alt="musée du Prado">
-        <figcaption>Le musée du prado, Madrid</figcaption>
+        <figcaption class="figcaption__texte">Le musée du prado, Madrid</figcaption>
         </figure>
 
-        <h3>Ses oeuvres présentes à l'expo</h3>
+        <h3 class="juan__titre">Ses oeuvres présentes à l'expo</h3>
 
-        <div>
-            <img src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
-            <h2>Ecce Homo</h2>
-            <a>En savoir plus</a>
-        </div>
 
-        <div>
-            <img src="/public/img/juan/la-cene.webp" alt="La cène">
-            <h2>La cène</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
+                <h2 class="carte__texte">Ecce Homo</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/juan/la-cene.webp" alt="La cène">
+                <h2 class="carte__texte">La cène</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
+
 
 <!--début liste-->
-            <h3>Les oeuvres les plus connues de l’artiste</h3>
-            <ul>
+            <h3 class="juan__titre">Les oeuvres les plus connues de l’artiste</h3>
+            <ul class="juan__liste">
                 <li>Saint Stephan in the synagogue, 1562</li>
                 <li>Enterrio de San esteban, 1562</li>
                 <li>Martirio de san esteban, 1562</li>

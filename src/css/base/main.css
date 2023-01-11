@@ -22,3 +22,8 @@ body {
 .noscroll, .noscroll body {
     overflow: hidden;
   }
+
+.figcaption__texte {
+    font-family: var(--font-commentaire);
+    text-align: center;
+}

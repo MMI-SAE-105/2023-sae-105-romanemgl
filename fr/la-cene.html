@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -59,19 +59,19 @@
 <!--fin header-->  
 
 <!--début main-->
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>La cène</h2>
+        <h2 class="la-cene__titre-principal">La cène</h2>
 
         <figure>
             <img src="/public/img/juan/la-cene.webp" alt="La cène">
-            <figcaption>Le fameux tableaux</figcaption>
+            <figcaption class="figcaption__texte">Le fameux tableaux</figcaption>
         </figure>
 
-        <p>Une peinture harmonieuse du peintre espagnol Juan de Juanes. Assez étrangement, les visages de la plupart des disciples 
+        <p class="la-cene__texte">Une peinture harmonieuse du peintre espagnol Juan de Juanes. Assez étrangement, les visages de la plupart des disciples 
             semblent rayonner surtout d'adoration - et cela alors qu'ils viennent d'apprendre que leur maître est sur le point d'être trahi.
             Au premier plan à droite, le traître Judas, pour une meilleure reconnaissance il a été équipé d'une bourse d'argent. 
             Il est vêtu de jaune, la couleur de l'envie. Il est également le seul personnage sans auréole. Au premier plan un bol pour se 
@@ -80,22 +80,30 @@
 
         <figure>
             <img src="/public/img/juan/eglise.webp" alt="Eglise">
-            <figcaption>Eglise de San Esteban, Valence</figcaption>
+            <figcaption class="figcaption__texte">Eglise de San Esteban, Valence</figcaption>
         </figure>
 
-        <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="la-cene__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
-        <div>
-            <img src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
-            <h2>Ecce Homo</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
+                <h2 class="carte__texte">Ecce Homo</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 
-        <div>
-            <img src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
-            <h2>Juan de Juanes</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
+                <h2 class="carte__texte">Juan de Juanes</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
     </main>
 <!--fin de main-->
 

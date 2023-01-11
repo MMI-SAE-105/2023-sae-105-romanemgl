@@ -1,0 +1,19 @@
+.juan__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.juan__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.juan__texte {
+    font-family: var(--font-texte);
+}
+
+.juan__liste {
+    font-family: var(--font-titre);
+    color: var(--marron);
+}
