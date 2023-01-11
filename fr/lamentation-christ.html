@@ -17,39 +17,47 @@
 </head>
 
 <body>
-<!--début header-->
-    <header>
-        <img src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
-    
-           
-            <img src="/public/img/icones/globe.svg" alt="logo globe">
-            
-        
-            <button>
-                <img src="/public/img/icones/menu.svg" alt="logo menu">
-            </button>
- <!--début menu-->
-        <div>
-            <button></button> 
-            <nav>
-                <h3>Nos artistes</h3>
-                <ul>
-                    <li><a href="/fr/juan.html">Juan de Juanes</a></li>
-                    <li><a href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
-                    <li><a href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>
-                    <li><a href="/fr/titien.html">Titien</a></li>
-                </ul>
-                <h3>à propos</h3>
-                <ul>
-                    <li><a href="/fr/information.html">L'exposition</a></li>
-                    <li><a href="/fr/expo.html">maniérisme : l’avant-garde du baroque </a></li>
-                    <li><a href="/fr/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+<!--début header-->  
+<header class="header">
+    <div>
+        <img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo">
+    </div>
+   
+    <div class="header__droite"> 
+        <a href="/index.html">
+            <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
+        </a>
+
+    <!--début menu-->
+<button class="header_menuBtn" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+    <img class="header__icone" src="/public/img/icones/menu.svg" alt="menu">
+</button>
+<nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <div class="menu__top">
+        <img class="header__logo-site" src="/public/img/icones/logo-blanc.svg" alt="logo Maniérisme expo">
+        <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
+            <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
+        </button>
+    </div>
+
+   <ul class="menu__texte-liste">
+        <li><h3 class="menu__titre"> Nos articles </h3></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/juan.html">Juan de Juanes</a></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/sofonisba.html">Sofonisba Anguissola</a></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/bartholomeus.html">Bartholomeus Spranger</a></li>               
+        <li class="menu__item"><a class="menu__texte" href="/fr/titien.html">Titien</a></li>       
+    </ul>
+    <ul class="menu__texte-liste">
+        <li><h3 class="menu__titre">à propos</h3></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/information.html">L'exposition</a></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/expo.html">maniérisme : l’avant-garde du baroque</a></li>
+        <li class="menu__item"><a class="menu__texte" href="/fr/contact.html">Contact</a></li>
+    </ul> 
+</nav>
+</div>         
 <!--fin menu-->
-<!--fin header-->
-    </header>
+</header>
+<!--fin header-->  
 
     <main>
         <h1>Maniérisme : l'avant garde du baroque</h1>
