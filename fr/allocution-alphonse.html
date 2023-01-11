@@ -34,7 +34,7 @@
     <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
         <div class="menu__top">
 
-            <<a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+            <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
             <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
                 <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
             </button>
@@ -79,27 +79,30 @@
 
             <h3 class="allocution__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
     
-
+        
             <article class="carte">
                 <div class="carte__div-img">
                     <img class="carte__img" src="/public/img/titien/portrait-titien.webp" alt="Titien">
                     <h2 class="carte__texte">Titien</h2>
                 </div>
                 <div class="carte__caption">
-                    <a class="carte__en-savoir-plus">En savoir plus</a>
+                    <a href="/fr/titien.html" class="carte__en-savoir-plus">En savoir plus</a>
                 </div>
             </article>
+        
 
+
+        
             <article class="carte">
                 <div class="carte__div-img">
                     <img class="carte__img" src="/public/img/titien/couronne-epine-christ.webp" alt="Le christ couronné d'épines">
                     <h2 class="carte__texte">Le christ couronné d'épines</h2>
                 </div>
                 <div class="carte__caption">
-                    <a class="carte__en-savoir-plus">En savoir plus</a>
+                    <a href="/fr/christ-couronne.html" class="carte__en-savoir-plus">En savoir plus</a>
                 </div>
             </article>
-    
+      
 <!--fin du main-->
         
     </main>
