@@ -98,4 +98,22 @@
       right: 100%;
       border-left: none;
 }
-  
+
+.expo__section-bouton {
+      text-align: center ;
+      margin-bottom: 30px;
+}
+
+.expo__bouton-clique {
+      font-family: var(--font-titre);
+      color: var(--marron);
+}
+
+.expo__bouton {
+      background: none;
+      border: none;
+}
+
+.expo__bouton-texte {
+      font-family: var(--font-texte);
+}
