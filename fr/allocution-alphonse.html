@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -59,26 +59,36 @@
     </header>
 <!--fin header-->  
 
-    <main>
+    <main class="container">
         
-            <h1>Maniérisme : l'avant garde du baroque</h1>
+            <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                             
-            <p>Exposition temporaire</p>
+            <p class="exposition-temporaire">Exposition temporaire</p>
                     
-            <h2>Allocution d'Alphonse</h2>
+            <h2 class="allocution__titre-principal">Allocution d'Alphonse</h2>
     
             <figure>
                 <img src="/public/img/titien/allocution.webp" alt="Allocution d'Alphonse">
-                <figcaption>Allocution d'Alphonse</figcaption>
+                <figcaption class="figcaption__texte">Allocution d'Alphonse</figcaption>
             </figure>
     
-            <p>L'Allocution d'Alphonse d'Avalos est un tableau peint par Titien vers 1540-1541 et conservé au Musée du Prado à Madrid. 
+            <p class="allocution__texte">L'Allocution d'Alphonse d'Avalos est un tableau peint par Titien vers 1540-1541 et conservé au Musée du Prado à Madrid. 
                 L'œuvre est le portrait de son commanditaire, le marquis Alphonse d'Avalos, un condottiere napolitain agissant pour le compte de l’Espagne. Elle représente un épisode où le marquis apaise par sa seule parole un début de mutinerie parmi ses troupes qui réclament leur salaire impayé.               
                 L'Allocution d'Alphonse d'Avalos est une peinture à l'huile réalisée sur toile. Elle mesure 223 × 165 centimètres. L'œuvre présente un homme en armure vu de côté et en pied. Il est debout sur une estrade et lève la main dans un geste d'éloquence. À ses côtés, se tient un enfant porteur également d'une armure et qui regarde le spectateur dans les yeux. L'homme fait face à un nombre important de soldats au premier rang desquels se tient un porteur de hallebarde de trois-quart dos. Au-dessus des soldats, le ciel bleu est chargé de longs nuages. 
             </p>
 
-            <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+            <h3 class="allocution__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
     
+
+            <article class="carte">
+                <div class="carte__div-img">
+                    <img class="carte__img" src="/public/img/titien/allocution.webp" alt="Allocution d'Alphonse">
+                    <h2 class="carte__texte">Allocution d'Alphonse</h2>
+                </div>
+                <div class="carte__caption">
+                    <a class="carte__en-savoir-plus">En savoir plus</a>
+                </div>
+            </article>
             <div>
                 <img src="/public/img/titien/portrait-titien.webp" alt="Titien">
                 <h2>Titien</h2>

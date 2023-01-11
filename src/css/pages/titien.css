@@ -1,0 +1,14 @@
+.titien__titre-principal {
+    font-family: var(--font-titre);
+    color: var(--noir);
+    text-align: center;
+}
+
+.titien__titre {
+    font-family: var(--font-titre);
+    margin-left: 10px;
+}
+
+.titien__texte {
+    font-family: var(--font-texte);
+}
