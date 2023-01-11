@@ -8,7 +8,7 @@
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js%22%3E"></script>
     
@@ -59,44 +59,52 @@
 </header>
 <!--fin header-->  
 
-    <main>
-        <h1>Maniérisme : l'avant garde du baroque</h1>
+    <main class="container">
+        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
-        <p>Exposition temporaire</p>
+        <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2>Le Christ couronné d'épines</h2>
+        <h2 class="christ__titre-principal">Le Christ couronné d'épines</h2>
 
         <figure>
             <img src="/public/img/titien/couronne-epine-christ.webp" alt="Christ couronné d'épines">
-            <figcaption>Le christ couronné d'épines</figcaption>
+            <figcaption class="figcaption__texte">Le christ couronné d'épines</figcaption>
         </figure>
 
-        <p>La Couronne d'épines ou Le Christ couronné d'épines est une huile sur toile peinte en 1576 par le Titien.
+        <p class="christ__texte">La Couronne d'épines ou Le Christ couronné d'épines est une huile sur toile peinte en 1576 par le Titien.
             Cette toile est conservée actuellement à l'Alte Pinakothek de Munich. C'est une composition typique de la dernière période du Titien.1. Elle peut être comparée à une version antérieure de 1542 sur le même sujet, conservée au musée du Louvre à Paris. 
         </p>
 
         <figure>
             <img src="/public/img/titien/portrait-titien.webp" alt="Titien">
-            <figcaption>L'artiste</figcaption>
+            <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p>Peint entre 1540 et 1543 pour la Confraternita di Santa Corona et placé dans la chapelle funéraire de la confrérie (décorée à fresque de scènes de la passion par Gaudenzio Ferrari en 1540-1542), dans l’église dominicaine de Santa Maria delle Grazie, Milan ; prélevé en 1796 ; emporté au Louvre en 1797.
+        <p class="christ__texte">Peint entre 1540 et 1543 pour la Confraternita di Santa Corona et placé dans la chapelle funéraire de la confrérie (décorée à fresque de scènes de la passion par Gaudenzio Ferrari en 1540-1542), dans l’église dominicaine de Santa Maria delle Grazie, Milan ; prélevé en 1796 ; emporté au Louvre en 1797.
             Cette première version coïncide avec la guerre de Esmalcada, entre les protestants et Charles V. Cette même année est celle de la restauration de l’Inquisition par le pape Paul III.             
         </p>
 
-        <h3>L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="christ__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
-        <div>
-            <img src="/public/img/titien/portrait-titien.webp" alt="Titien">
-            <h2>Titien</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/titien/portrait-titien.webp" alt="Titien">
+                <h2 class="carte__texte">Titien</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 
-        <div>
-            <img src="/public/img/titien/allocution.webp" alt="Allocution d'Alphonse">
-            <h2>Allocution d'Alphonse</h2>
-            <a>En savoir plus</a>
-        </div>
+        <article class="carte">
+            <div class="carte__div-img">
+                <img class="carte__img" src="/public/img/titien/allocution.webp" alt="Allocution d'Alphonse">
+                <h2 class="carte__texte">Allocution d'Alphonse</h2>
+            </div>
+            <div class="carte__caption">
+                <a class="carte__en-savoir-plus">En savoir plus</a>
+            </div>
+        </article>
 <!--fin du main-->
     </main>
 <!--début footer-->
