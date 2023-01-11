@@ -8,7 +8,7 @@
   border: none;
 } 
 
-img{
+.carrousel__img{
     max-width:100%;
     height:auto;
     display: block;

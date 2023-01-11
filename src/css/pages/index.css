@@ -2,3 +2,8 @@
     font-family: var(--font-titre);
     margin-left: 10px;
 }
+
+.index__image-header{
+    margin-top: 0px;
+    width: 100%;
+}
