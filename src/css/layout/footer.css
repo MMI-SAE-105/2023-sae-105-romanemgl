@@ -17,6 +17,8 @@
 .footer__texte {
     font-family: var(--font-texte);
     margin-left: 10px;
+    text-decoration: none;
+    
 }
 
 .footer__contact {
