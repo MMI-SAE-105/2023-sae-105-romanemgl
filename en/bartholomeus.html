@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamentation du christ, Bartholomeus</title>
+    <title>Bartholomeus</title>
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
@@ -14,16 +14,15 @@
     
 
 </head>
-
 <body>
 <!--début header-->  
 <header class="header">
     <div>
-        <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+        <a href="/en/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
     </div>
    
     <div class="header__droite"> 
-        <a href="/en/lamentation-christ.html">
+        <a href="/fr/bartholomeus.html">
             <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
         </a>
 
@@ -33,6 +32,7 @@
 </button>
 <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <div class="menu__top">
+
         <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
         <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
             <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
@@ -58,22 +58,16 @@
 </header>
 <!--fin header-->  
 
+<!--début du main-->
     <main class="container">
         <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
         <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2 class="lamentation__titre-principal">Lamentation du Christ</h2>
+        <h2 class="bartholomeus__titre-principal">Bartholomeus Spranger</h2>
 
-        <figure>
-            <img class="article__img-manierisme" src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du christ">
-            <figcaption class="figcaption__texte">Le fameux tableau</figcaption>
-        </figure>
-
-        <p class="lamentation__texte">Dans un cadrage resserré, seuls sont visibles le Christ et les trois personnes qui lui sont le plus proches.
-            Le Christ, allongé sur la pierre du sépulcre (un lit de marbre), est placé de face dans une perspective centrale depuis les pieds vers sa tête, (de pierre ?). Un vase (ou une lampe, une fiole d'onguent, ...) est visible aussi à droite du tableau, à la hauteur de la tête sur la pierre.
-            Les personnages pleurant (un fort rictus est visible sur leurs faces) sont placés dans la partie gauche extrême du tableau, ne laissant apparaître qu'une partie de leur visage, (ou l'inverse, les détails des visages étant trop minimes pour les distinguer).
-            Si cette mise en scène perspective est troublante car non habituelle et exagérée, elle permet au peintre de montrer dans un seul coup d'œil, les principaux stigmates dus aux clous de la crucifixion du Christ sur les pieds et les mains. On devinera, en sachant sa position, la trace également du coup de lance au flanc.
+        <p class="bartholomeus__texte">Bartholomeus Spranger (Anvers, 21 mars 1546 - Prague, 27 juin 1611) est un peintre, dessinateur et graveur maniériste flamand actif à la cour pragoise de Rodolphe II. Il était l'un des principaux représentants du Maniérisme du Nord.
+            Bartholomeus Spranger fut un des peintres les plus renommés de son époque. Ayant fait preuve de ses talents artistiques dès l'enfance, Bartholomeus fut envoyé à l'âge de onze ans apprendre l'art pictural auprès de maitres tels que l'Anversois originaire de Haarlem spécialisé dans les « drôleries » à la Jérôme Bosch, Jan Mandijn. Il y resta jusqu’à la mort de ce dernier, en 1559.
         </p>
 
         <figure>
@@ -81,23 +75,31 @@
             <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p class="lamentation__christ">Le talent de Mantegna, dans toutes les représentations architecturales et sa maîtrise du marbre chiqueté2, s'exprime ici par le marbre froid de la morgue, le drapé couvrant le mort, et même dans l'oreiller rose satiné, voire les veinures rouge du marbre pour le sang du Christ versé.
-            Le Christ semble seul dans la mort, les vivants repoussés en bord du cadre, pleurant les douleurs de sa Passion. C'est un accent clair sur l'humanité du Christ, fils de l'Homme, une figure sans symbolisme appuyé (malgré tout, la tête du Christ est auréolée - très légèrement visible).
+        <p class="bartholomeus__texte">Ensuite, il passa chez les paysagistes Frans Mostaert, jusqu'en 1560, année où celui-ci succomba à la peste, et Cornelis van Dalem, jusqu’à 1564. Il étudia également, par l'entremise de gravures, les œuvres maniéristes de Frans Floris et du Parmesan. Une fois son apprentissage terminé, en 1564, il se rendit tout d'abord à Paris, le 1er mars 1565, où il travailla pendant six semaines dans l’atelier de Marc Duval, et à Lyon avant de rejoindre, en 1565, la véritable patrie de la Renaissance des Arts : l'Italie.
         </p>
 
-        <h3 class="lamentation__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
+        <figure>
+            <img class="article__img-manierisme" src="/public/img/bartholomeus/ecole-dessin.webp" alt="dessin école">
+            <figcaption class="figcaption__texte">Dessin de son école</figcaption>
+        </figure>
+
+
+        <h3 class="bartholomeus__titre">ses oeuvres présentes à l’expo </h3>
+
 
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-                <h2 class="carte__texte">Bartholomeus</h2>
+                <img class="carte__img" src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du Christ">
+                <h2 class="carte__texte">Lamentation du Christ</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/bartholomeus.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/lamentation-christ.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
 
-        <article class="carte">
+
+
+    <article class="carte">
             <div class="carte__div-img">
                 <img class="carte__img" src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Scylla et Glaucus">
                 <h2 class="carte__texte">Scylla et Glaucus</h2>
@@ -105,10 +107,11 @@
             <div class="carte__caption">
                 <a href="/fr/scylla-glaucus.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
-        </article>
-<!--fin main-->
+    </article>
+        
     </main>
-<!--début footer-->
+<!--fin du main-->
+<!--début du footer-->
 <footer class="footer">
     <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
     
@@ -137,6 +140,6 @@
     </div>
 
 </footer>
-<!--fin footer-->
+<!--fin du footer-->
 </body>
 </html>

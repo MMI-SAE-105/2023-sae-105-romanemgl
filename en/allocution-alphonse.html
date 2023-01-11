@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecce Homo, Juan de Juanes</title>
+    <title>Allocution Alphonse, Titien</title>
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
@@ -14,15 +14,16 @@
     
 
 </head>
+
 <body>
     <!--début header-->  
     <header class="header">
         <div>
-            <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+            <a href="/en/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
         </div>
        
         <div class="header__droite"> 
-            <a href="/en/ecce-homo.html">
+            <a href="/fr/allocution-alphonse.html">
                 <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
             </a>
 
@@ -32,6 +33,7 @@
     </button>
     <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
         <div class="menu__top">
+
             <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
             <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
                 <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
@@ -58,60 +60,52 @@
 <!--fin header-->  
 
     <main class="container">
-        <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
-                        
-        <p class="exposition-temporaire">Exposition temporaire</p>
-                
-        <h2 class="ecce-homo__titre-principal">Ecce Homo</h2>
+        
+            <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
+                            
+            <p class="exposition-temporaire">Exposition temporaire</p>
+                    
+            <h2 class="allocution__titre-principal">Allocution d'Alphonse</h2>
+    
+            <figure>
+                <img class="article__img-manierisme" src="/public/img/titien/allocution.webp" alt="Allocution d'Alphonse">
+                <figcaption class="figcaption__texte">Allocution d'Alphonse</figcaption>
+            </figure>
+    
+            <p class="allocution__texte">L'Allocution d'Alphonse d'Avalos est un tableau peint par Titien vers 1540-1541 et conservé au Musée du Prado à Madrid. 
+                L'œuvre est le portrait de son commanditaire, le marquis Alphonse d'Avalos, un condottiere napolitain agissant pour le compte de l’Espagne. Elle représente un épisode où le marquis apaise par sa seule parole un début de mutinerie parmi ses troupes qui réclament leur salaire impayé.               
+                L'Allocution d'Alphonse d'Avalos est une peinture à l'huile réalisée sur toile. Elle mesure 223 × 165 centimètres. L'œuvre présente un homme en armure vu de côté et en pied. Il est debout sur une estrade et lève la main dans un geste d'éloquence. À ses côtés, se tient un enfant porteur également d'une armure et qui regarde le spectateur dans les yeux. L'homme fait face à un nombre important de soldats au premier rang desquels se tient un porteur de hallebarde de trois-quart dos. Au-dessus des soldats, le ciel bleu est chargé de longs nuages. 
+            </p>
 
-        <figure>
-            <img class="article__img-manierisme" src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
-            <figcaption class="figcaption__texte">Le fameux tableau</figcaption>
-        </figure>
+            <h3 class="allocution__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
+    
+        
+            <article class="carte">
+                <div class="carte__div-img">
+                    <img class="carte__img" src="/public/img/titien/portrait-titien.webp" alt="Titien">
+                    <h2 class="carte__texte">Titien</h2>
+                </div>
+                <div class="carte__caption">
+                    <a href="/fr/titien.html" class="carte__en-savoir-plus">En savoir plus</a>
+                </div>
+            </article>
+        
 
-        <p class="ecce-homo__texte">Cette représentation directe et frontale du Christ portant la couronne d'épines, 
-            les mains liées et tenant un sceptre de roseau, fut l'une des compositions les plus réussies de Juanes.
-            Le rendu soigné rappelle la peinture hollandaise.
-            La figure fortement éclairée se détache sur un fond sombre, renforçant la concentration du spectateur 
-            sur le pathos émotionnel de l'image.
-        </p>
-            
-        <figure>
-            <img class="article__img-manierisme" src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
-            <figcaption class="figcaption__texte">Juan de Juanes</figcaption>
-        </figure>
-
-        <h3 class="ecce-homo__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
-
-        <p class="ecce-homo__texte">Ecce homo est une expression latine signifiant « voici l'homme ». Il s'agit de l'expression prêtée à Ponce Pilate, gouverneur romain de Judée, dans la traduction de la Vulgate de l'Évangile selon Jean (19:5) lorsqu'à Jérusalem, il présente à la foule Jésus de Nazareth sortant du prétoire, après la flagellation. La phrase correspondante en grec ancien est Ἰδού ὁ ἄνθρωπος / Idoύ ho anthrôpos.
-            Un Ecce Homo sur le plan artistique est une représentation de Jésus de Nazareth debout, couronné d'épines et revêtu d'une cape, les deux mains entravées par une corde, tenant un sceptre de roseau. Cette représentation peut comporter des variantes selon les œuvres.
-        </p>
-
-
-        <article class="carte">
-            <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/juan/la-cene.webp" alt="La cène">
-                <h2 class="carte__texte">La cène</h2>
-            </div>
-            <div class="carte__caption">
-                <a href="/fr/la-cene.html" class="carte__en-savoir-plus">En savoir plus</a>
-            </div>
-        </article>
-
-        <article class="carte">
-            <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
-                <h2 class="carte__texte">Juan de Juanes</h2>
-            </div>
-            <div class="carte__caption">
-                <a href="/fr/juan.html" class="carte__en-savoir-plus">En savoir plus</a>
-            </div>
-        </article>
 
         
-    </main>
+            <article class="carte">
+                <div class="carte__div-img">
+                    <img class="carte__img" src="/public/img/titien/couronne-epine-christ.webp" alt="Le christ couronné d'épines">
+                    <h2 class="carte__texte">Le christ couronné d'épines</h2>
+                </div>
+                <div class="carte__caption">
+                    <a href="/fr/christ-couronne.html" class="carte__en-savoir-plus">En savoir plus</a>
+                </div>
+            </article>
+      
 <!--fin du main-->
-
+        
+    </main>
 <!--début footer-->
 <footer class="footer">
     <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
@@ -141,6 +135,6 @@
     </div>
 
 </footer>
-<!--fin footer-->
+<!--fin du footer-->
 </body>
 </html>

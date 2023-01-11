@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maniérisme : l'avant garde du baroque</title>
+    <title>Partie d'echec, Sofonisba</title>
 
-    <!-- Déclaration de la feuille de style -->
-    <link rel="icon" href="/public/img/icones/logo_site.svg" />
+<!-- Déclaration de la feuille de style -->
+<link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+
 </head>
 
 <body>
+    <!--début header-->  
     <header class="header">
         <div>
-            <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+            <a href="/en/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
         </div>
        
         <div class="header__droite"> 
-            <a href="/en/index.html">
+            <a href="/fr/partie-echec.html">
                 <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
             </a>
 
@@ -53,87 +56,59 @@
     </nav>
 </div>         
 <!--fin menu-->
-</header>
-<!--début main-->
-    <main>
+    </header>
+<!--fin header-->  
 
-        
-        <img class="index__image-header" src="/public/img/header/header-image1.webp">
-        
-
+    <main class="container">
         <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
-                    
+                        
         <p class="exposition-temporaire">Exposition temporaire</p>
-            
+                
+        <h2 class="jeu-echec__titre-principal">Jeu d'échecs</h2>
+
+        <figure>
+            <img class="article__img-manierisme" src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échec">
+            <figcaption class="figcaption__texte">Jeu d'échec</figcaption>
+        </figure>
+
+        <p class="jeu-echec__texte">La famille Anguissola appartient à la petite noblesse de Crémone, ville de Lombardie en Italie du nord. Amilcare, le père de Sofonisba, est un homme cultivé et ouvert d'esprit, un humaniste du 16e siècle qui s'intéresse à l'Antiquité. Aussi donne-t-il à ses filles une éducation orientée vers la culture et comportant lecture, dessin et musique. La famille comporte six filles et un garçon, Sofonisba étant l’aînée. 
+        </p>
+
+        <figure>
+            <img class="article__img-manierisme" src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
+            <figcaption class="figcaption__texte">L'artiste</figcaption>
+        </figure>
+
+        <p class="jeu-echec__texte">Dès l’âge de quinze ans, vers 1546, Sofonisba et sa jeune sœur Elena étudient la peinture auprès d’un peintre de Crémone, Bernardino Campi. Plus tard, elle complète sa formation à Rome puis commence à être remarquée par des commanditaires. Elle deviendra la portraitiste de la cour d’Espagne entre 1559 et 1578.
+            La partie d’échecs est donc une œuvre de jeunesse créée avant la gloire acquise auprès du roi d’Espagne Philippe II (1527-1598) et de sa jeune épouse, Elisabeth de Valois (1545-1568), dont Sofonisba fut la dame d’honneur et l’amie, les deux femmes ayant approximativement le même âge.            
+        </p>
+
+        <h3 class="jeu-echec__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
+
+
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/sofonisba/jeu-echec.webp" alt="L'exposition">
-                <h2 class="carte__texte">L'exposition</h2>
+                <img class="carte__img" src="/public/img/sofonisba/auto-portrait.webp" alt="Auto portrait">
+                <h2 class="carte__texte">Auto Portrait</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/expo.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href= "/fr/auto-portrait.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
 
-        
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/juan/la-cene.webp" alt="Maniérisme : l’avant-garde du baroque">
-                <h2 class="carte__texte">Maniérisme : l’avant-garde du baroque</h2>
+                <img class="carte__img" src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
+                <h2 class="carte__texte">Sofonisba</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/expo.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/sofonisba.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
-        
-    
-        
 
-        <h3 class="index__titre">Les artistes emblématiques</h3>
-
-        <div class="carrousel">      
-            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
-                <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><img src="/public/img/icones/chevron-gauche-blanc.svg" alt="flèche gauche"></button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"><img src="/public/img/icones/chevron-droite-blanc.svg" alt="flèche droite"></button>
-                <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                               
-                                
-                                
-                    <div id="ecran-1" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/bartholomeus.html"><img class="carrousel__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="image ecran 1"></a>
-                            <figcaption><a class="carrousel__texte" href="/fr/bartholomeus.html">Bartholomeus</figcaption></a>
-                        </figure>
-                    </div>
-
-                    <div id="ecran-2" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/juan.html"><img class="carrousel__img"  src="/public/img/juan/juan-juanes.webp" alt="image ecran 2"></a>
-                            <figcaption><a class="carrousel__texte" href="/fr/juan.html">Juan de Juanes</a></figcaption>
-                        </figure>
-                    </div>
-
-                    <div id="ecran-3" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/titien.html"><img class="carrousel__img"  src="/public/img/titien/portrait-titien.webp" alt="image ecran 3"></a>
-                            <figcaption><a class="carrousel__texte" href="/fr/titien.html">Titien</figcaption></a>
-                        </figure>
-                    </div>
-
-                    <div id="ecran-4" class="carrousel_ecran">
-                        <figure>
-                            <a href="/fr/sofonisba.html"><img class="carrousel__img"  src="/public/img/sofonisba/portrait-sofonisba.webp" alt="image ecran 4"></a>
-                            <figcaption><a class="carrousel__texte" href="/fr/sofonisba.html">Sofonisba</a></figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    
     </main>
 <!--fin main-->
-<!--début footer-->
+<!--debut footer-->
     <footer class="footer">
         <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
         
@@ -164,4 +139,3 @@
     </footer>
 <!--fin footer-->
 </body>
-</html>

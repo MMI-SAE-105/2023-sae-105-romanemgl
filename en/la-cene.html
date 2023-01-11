@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamentation du christ, Bartholomeus</title>
+    <title>La cène, Juan de Juanes</title>
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
+
 
 </head>
-
 <body>
 <!--début header-->  
 <header class="header">
     <div>
-        <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+        <a href="/en/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
     </div>
    
     <div class="header__droite"> 
-        <a href="/en/lamentation-christ.html">
+        <a href="/fr/la-cene.html">
             <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
         </a>
 
@@ -33,6 +32,7 @@
 </button>
 <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <div class="menu__top">
+
         <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
         <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
             <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
@@ -58,57 +58,56 @@
 </header>
 <!--fin header-->  
 
+<!--début main-->
     <main class="container">
         <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
         <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2 class="lamentation__titre-principal">Lamentation du Christ</h2>
+        <h2 class="la-cene__titre-principal">La cène</h2>
 
         <figure>
-            <img class="article__img-manierisme" src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du christ">
-            <figcaption class="figcaption__texte">Le fameux tableau</figcaption>
+            <img class="article__img-manierisme" src="/public/img/juan/la-cene.webp" alt="La cène">
+            <figcaption class="figcaption__texte">Le fameux tableaux</figcaption>
         </figure>
 
-        <p class="lamentation__texte">Dans un cadrage resserré, seuls sont visibles le Christ et les trois personnes qui lui sont le plus proches.
-            Le Christ, allongé sur la pierre du sépulcre (un lit de marbre), est placé de face dans une perspective centrale depuis les pieds vers sa tête, (de pierre ?). Un vase (ou une lampe, une fiole d'onguent, ...) est visible aussi à droite du tableau, à la hauteur de la tête sur la pierre.
-            Les personnages pleurant (un fort rictus est visible sur leurs faces) sont placés dans la partie gauche extrême du tableau, ne laissant apparaître qu'une partie de leur visage, (ou l'inverse, les détails des visages étant trop minimes pour les distinguer).
-            Si cette mise en scène perspective est troublante car non habituelle et exagérée, elle permet au peintre de montrer dans un seul coup d'œil, les principaux stigmates dus aux clous de la crucifixion du Christ sur les pieds et les mains. On devinera, en sachant sa position, la trace également du coup de lance au flanc.
-        </p>
+        <p class="la-cene__texte">Une peinture harmonieuse du peintre espagnol Juan de Juanes. Assez étrangement, les visages de la plupart des disciples 
+            semblent rayonner surtout d'adoration - et cela alors qu'ils viennent d'apprendre que leur maître est sur le point d'être trahi.
+            Au premier plan à droite, le traître Judas, pour une meilleure reconnaissance il a été équipé d'une bourse d'argent. 
+            Il est vêtu de jaune, la couleur de l'envie. Il est également le seul personnage sans auréole. Au premier plan un bol pour se 
+            laver les pieds avant le souper. Le panneau a été réalisé pour l'autel de l'église de San Esteban à Valence, ainsi qu'une série de peintures sur la vie de saint Étienne. Elle était bordée de panneaux représentant L'agonie dans le jardin et Le Couronnement d'épines.
+            </p>
 
         <figure>
-            <img class="article__img-manierisme" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-            <figcaption class="figcaption__texte">L'artiste</figcaption>
+            <img class="la-cene__image-eglise" src="/public/img/juan/eglise.webp" alt="Eglise">
+            <figcaption class="figcaption__texte">Eglise de San Esteban, Valence</figcaption>
         </figure>
 
-        <p class="lamentation__christ">Le talent de Mantegna, dans toutes les représentations architecturales et sa maîtrise du marbre chiqueté2, s'exprime ici par le marbre froid de la morgue, le drapé couvrant le mort, et même dans l'oreiller rose satiné, voire les veinures rouge du marbre pour le sang du Christ versé.
-            Le Christ semble seul dans la mort, les vivants repoussés en bord du cadre, pleurant les douleurs de sa Passion. C'est un accent clair sur l'humanité du Christ, fils de l'Homme, une figure sans symbolisme appuyé (malgré tout, la tête du Christ est auréolée - très légèrement visible).
-        </p>
-
-        <h3 class="lamentation__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="la-cene__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
 
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-                <h2 class="carte__texte">Bartholomeus</h2>
+                <img class="carte__img" src="/public/img/juan/ecce-homo.webp" alt="Ecce Homo">
+                <h2 class="carte__texte">Ecce Homo</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/bartholomeus.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/ecce-homo.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
 
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Scylla et Glaucus">
-                <h2 class="carte__texte">Scylla et Glaucus</h2>
+                <img class="carte__img" src="/public/img/juan/juan-juanes.webp" alt="Juan de Juanes">
+                <h2 class="carte__texte">Juan de Juanes</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/scylla-glaucus.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/juan.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
-<!--fin main-->
     </main>
-<!--début footer-->
+<!--fin de main-->
+
+<!--début du footer-->
 <footer class="footer">
     <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
     
@@ -137,6 +136,5 @@
     </div>
 
 </footer>
-<!--fin footer-->
 </body>
 </html>

@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lamentation du christ, Bartholomeus</title>
+    <title>Sofonisba</title>
 
 <!-- Déclaration de la feuille de style -->
 <link rel="icon" href="/public/img/icones/logo_site.svg" />
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    
 
 </head>
 
@@ -19,11 +18,11 @@
 <!--début header-->  
 <header class="header">
     <div>
-        <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
+        <a href="/en/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
     </div>
    
     <div class="header__droite"> 
-        <a href="/en/lamentation-christ.html">
+        <a href="/fr/sofonisba.html">
             <img class="header__icone" src="/public/img/icones/globe.svg" alt="logo globe">
         </a>
 
@@ -33,6 +32,7 @@
 </button>
 <nav class=" menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <div class="menu__top">
+
         <a href="/fr/index.html"><img class="header__logo-site" src="/public/img/icones/logo-reduit.svg" alt="logo Maniérisme expo"></a>
         <button class="menu__icone-croix" @click="menuIsOpen = !menuIsOpen">
             <img src="/public/img/icones/croix-blanche.svg" alt="icone croix">
@@ -58,57 +58,51 @@
 </header>
 <!--fin header-->  
 
+<!--debut main-->
     <main class="container">
         <h1 class="manierisme">Maniérisme : l'avant garde du baroque</h1>
                         
         <p class="exposition-temporaire">Exposition temporaire</p>
                 
-        <h2 class="lamentation__titre-principal">Lamentation du Christ</h2>
+        <h2 class="sofonisba__titre-principal">Sofonisba Anguissola</h2>
 
         <figure>
-            <img class="article__img-manierisme" src="/public/img/bartholomeus/lamentation-du-christ.webp" alt="Lamentation du christ">
-            <figcaption class="figcaption__texte">Le fameux tableau</figcaption>
-        </figure>
-
-        <p class="lamentation__texte">Dans un cadrage resserré, seuls sont visibles le Christ et les trois personnes qui lui sont le plus proches.
-            Le Christ, allongé sur la pierre du sépulcre (un lit de marbre), est placé de face dans une perspective centrale depuis les pieds vers sa tête, (de pierre ?). Un vase (ou une lampe, une fiole d'onguent, ...) est visible aussi à droite du tableau, à la hauteur de la tête sur la pierre.
-            Les personnages pleurant (un fort rictus est visible sur leurs faces) sont placés dans la partie gauche extrême du tableau, ne laissant apparaître qu'une partie de leur visage, (ou l'inverse, les détails des visages étant trop minimes pour les distinguer).
-            Si cette mise en scène perspective est troublante car non habituelle et exagérée, elle permet au peintre de montrer dans un seul coup d'œil, les principaux stigmates dus aux clous de la crucifixion du Christ sur les pieds et les mains. On devinera, en sachant sa position, la trace également du coup de lance au flanc.
-        </p>
-
-        <figure>
-            <img class="article__img-manierisme" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
+            <img class="article__img-manierisme" src="/public/img/sofonisba/portrait-sofonisba.webp" alt="Sofonisba">
             <figcaption class="figcaption__texte">L'artiste</figcaption>
         </figure>
 
-        <p class="lamentation__christ">Le talent de Mantegna, dans toutes les représentations architecturales et sa maîtrise du marbre chiqueté2, s'exprime ici par le marbre froid de la morgue, le drapé couvrant le mort, et même dans l'oreiller rose satiné, voire les veinures rouge du marbre pour le sang du Christ versé.
-            Le Christ semble seul dans la mort, les vivants repoussés en bord du cadre, pleurant les douleurs de sa Passion. C'est un accent clair sur l'humanité du Christ, fils de l'Homme, une figure sans symbolisme appuyé (malgré tout, la tête du Christ est auréolée - très légèrement visible).
+        <p class="sofonisba__texte">Sofonisba Anguissola (1531/32-1626) bien que femme et noble, est devenue un peintre reconnu et a admirablement réussi dans un domaine jusqu’alors réservé exclusivement aux hommes.
+            Portraitiste de grand talent, elle fut appelée à la cour du roi Philippe II d’Espagne, où elle fut dame d’honneur de la reine et peintre de la famille royale. Cette artiste occupe une place tout à fait particulière dans l’histoire de la peinture de son temps et elle ouvrit la voie à d’autres femmes peintres, comme Artemisia Gentileschi, qui, comme elle, fut oubliée parce qu’elle était femme, et redécouverte parce qu’elle était femme. 
         </p>
 
-        <h3 class="lamentation__titre">L’artiste et son autre oeuvre présente à l’expo</h3>
+        <h3 class="sofonisba__titre">ses oeuvres présentes à l’expo</h3>
+
 
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/bartholomeus/portrait-bartholomeus.webp" alt="Bartholomeus">
-                <h2 class="carte__texte">Bartholomeus</h2>
+                <img class="carte__img" src="/public/img/sofonisba/jeu-echec.webp" alt="Jeu d'échecs">
+                <h2 class="carte__texte">Jeu d'échecs</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/bartholomeus.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/partie-echec.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
 
         <article class="carte">
             <div class="carte__div-img">
-                <img class="carte__img" src="/public/img/bartholomeus/scylla-glaucus.webp" alt="Scylla et Glaucus">
-                <h2 class="carte__texte">Scylla et Glaucus</h2>
+                <img class="carte__img" src="/public/img/sofonisba/auto-portrait.webp" alt="Auto portrait">
+                <h2 class="carte__texte">Auto Portrait</h2>
             </div>
             <div class="carte__caption">
-                <a href="/fr/scylla-glaucus.html" class="carte__en-savoir-plus">En savoir plus</a>
+                <a href="/fr/auto-portrait.html" class="carte__en-savoir-plus">En savoir plus</a>
             </div>
         </article>
-<!--fin main-->
+
+        
+
+<!--fin du main-->
     </main>
-<!--début footer-->
+<!--début du footer-->
 <footer class="footer">
     <img class="footer__logo" src="/public/img/icones/logo.svg" alt="logo Maniérisme expo">
     
@@ -137,6 +131,6 @@
     </div>
 
 </footer>
-<!--fin footer-->
+<!--fin du footer-->
 </body>
 </html>
